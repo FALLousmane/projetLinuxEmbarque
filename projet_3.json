@@ -1,0 +1,539 @@
+[
+    {
+        "id": "223a388a5757a4d5",
+        "type": "tab",
+        "label": "TEMPERATURE uP",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "500b83d547053e19",
+        "type": "tab",
+        "label": "TEMPERATURE PARIS",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b8d68d9b268647bc",
+        "type": "ui_group",
+        "name": "Raspberry uP",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "07a2b00e0a1698bd",
+        "type": "ui_group",
+        "name": "Demo",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": "demo"
+    },
+    {
+        "id": "dc17c14839d01fe3",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "74b0a649d11a4592",
+        "type": "ui_group",
+        "name": "RaspberryPI",
+        "tab": "36e62bcd6ad6cab6",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "36e62bcd6ad6cab6",
+        "type": "ui_tab",
+        "name": "Demo",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "365f0feecf4460ee",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "84989627d96efa56",
+        "type": "ui_group",
+        "name": "PARIS",
+        "tab": "36e62bcd6ad6cab6",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6b8ea4a8fc32d94a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ce32a8e4c478cbc3",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b87fb7e3f3868c1a",
+        "type": "inject",
+        "z": "223a388a5757a4d5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "31042cf86a713d62"
+            ]
+        ]
+    },
+    {
+        "id": "31042cf86a713d62",
+        "type": "exec",
+        "z": "223a388a5757a4d5",
+        "command": "vcgencmd measure_temp",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Rasbperry uP",
+        "x": 340,
+        "y": 100,
+        "wires": [
+            [
+                "bb491b6ba532120d",
+                "3bea4cbbbb743e26"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bb491b6ba532120d",
+        "type": "debug",
+        "z": "223a388a5757a4d5",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3bea4cbbbb743e26",
+        "type": "change",
+        "z": "223a388a5757a4d5",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "temp=",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "'C",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "2ea44398195aa36f",
+                "3f5c03376bec6caa"
+            ]
+        ]
+    },
+    {
+        "id": "2ea44398195aa36f",
+        "type": "debug",
+        "z": "223a388a5757a4d5",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "3f5c03376bec6caa",
+        "type": "ui_gauge",
+        "z": "223a388a5757a4d5",
+        "name": "",
+        "group": "74b0a649d11a4592",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "TEMPERATURE uP",
+        "label": "'C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#005cb3",
+            "#00a1e6",
+            "#3aaecb"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 940,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e2c3a9411332243e",
+        "type": "inject",
+        "z": "500b83d547053e19",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "4484e9460a0912d7",
+                "4ee906c8e906b2fa"
+            ]
+        ]
+    },
+    {
+        "id": "4484e9460a0912d7",
+        "type": "http request",
+        "z": "500b83d547053e19",
+        "name": "OpenWeather",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "api.openweathermap.org/data/2.5/weather?q=paris,france&units=metric&appid=d4c4f6cb44790090ae11b032de15c84a",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 340,
+        "y": 260,
+        "wires": [
+            [
+                "17f863f621989c29",
+                "8dd896a3e7963dc3",
+                "7389fc9231ac075f"
+            ]
+        ]
+    },
+    {
+        "id": "17f863f621989c29",
+        "type": "debug",
+        "z": "500b83d547053e19",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "7389fc9231ac075f",
+        "type": "ui_gauge",
+        "z": "500b83d547053e19",
+        "name": "TEMPERATURE",
+        "group": "84989627d96efa56",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "TAMPERATURE ",
+        "label": "'C",
+        "format": "{{payload.main.temp}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "50",
+        "className": "",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8dd896a3e7963dc3",
+        "type": "ui_gauge",
+        "z": "500b83d547053e19",
+        "name": "HUMIDITY",
+        "group": "84989627d96efa56",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "HUMIDITE ",
+        "label": "%",
+        "format": "{{payload.main.humidity}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#09d3e1",
+            "#05ecf0",
+            "#07d7f2"
+        ],
+        "seg1": "50",
+        "seg2": "75",
+        "className": "",
+        "x": 630,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fea4ec9f392e2df0",
+        "type": "ui_audio",
+        "z": "500b83d547053e19",
+        "name": "",
+        "group": "84989627d96efa56",
+        "voice": "Microsoft Hortense - French (France)",
+        "always": true,
+        "x": 660,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "4ee906c8e906b2fa",
+        "type": "function",
+        "z": "500b83d547053e19",
+        "name": "",
+        "func": "var message1={payload:\"votre processeur est tellement chauffé donc refroidissez le\"};\nvar message2={payload:\"mais la région parisienne est trop froide et humide\"};\n\nreturn [message1, message2];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 80,
+        "wires": [
+            [
+                "fea4ec9f392e2df0"
+            ],
+            [
+                "a5748480a22b266a"
+            ]
+        ]
+    },
+    {
+        "id": "05e294d61cbc70ef",
+        "type": "ui_audio",
+        "z": "500b83d547053e19",
+        "name": "",
+        "group": "84989627d96efa56",
+        "voice": "Microsoft Paul - French (France)",
+        "always": true,
+        "x": 660,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a5748480a22b266a",
+        "type": "delay",
+        "z": "500b83d547053e19",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 80,
+        "wires": [
+            [
+                "05e294d61cbc70ef"
+            ]
+        ]
+    }
+]
